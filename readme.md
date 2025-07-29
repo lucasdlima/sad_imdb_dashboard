@@ -132,9 +132,6 @@ mysql -u <usuario> -p < mysql-ddl/imdb_schema.sql
    ```
 
 
-
-````
-
 ### 4. Configurar Pentaho
 1. Abra o Spoon (`spoon.bat`/`spoon.sh`).
 2. Configure uma conexão MySQL chamada `IMDB_DW` apontando para o banco `imdb`.
