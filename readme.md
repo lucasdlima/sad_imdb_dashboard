@@ -115,11 +115,10 @@ README.md                # Este arquivo
 
 
 
-````
-2. Baixe e coloque os arquivos brutos em `./data/`:
+
+2. Baixe os arquivos:
 - `title.basics.tsv.gz`
 - `title.ratings.tsv.gz`
-3. (Opcional) Descompacte os arquivos; o Pentaho consegue ler arquivos `.gz` diretamente.
 
 ### 3. Inicializar Schema MySQL
 1. Crie o banco e as tabelas:
@@ -162,8 +161,6 @@ kitchen.sh -file=jobs/imdb_etl.kjb
   ```
 
 
-
-````
 - Exemplo de consulta:
 ```sql
 SELECT d.titulo_principal, f.media_avaliacao
