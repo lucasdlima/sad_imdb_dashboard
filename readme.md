@@ -110,9 +110,10 @@ README.md                # Este arquivo
 
 1. Clone este repositório:
    ```bash
+   git clone [https://github.com/](https://github.com/)/imdb-etl-pentaho-mysql.git cd imdb-etl-pentaho-mysql
    ```
 
-git clone [https://github.com/](https://github.com/)/imdb-etl-pentaho-mysql.git cd imdb-etl-pentaho-mysql
+
 
 ````
 2. Baixe e coloque os arquivos brutos em `./data/`:
@@ -128,9 +129,10 @@ mysql -u <usuario> -p < mysql-ddl/imdb_schema.sql
 
 2. Verifique as tabelas:
    ```sql
+   SHOW TABLES IN imdb;
    ```
 
-SHOW TABLES IN imdb;
+
 
 ````
 
@@ -156,9 +158,10 @@ kitchen.sh -file=jobs/imdb_etl.kjb
 
 - Verifique contagens:
   ```sql
+  SELECT COUNT(*) FROM dim\_titulo; SELECT COUNT(*) FROM fato\_avaliacao;
   ```
 
-SELECT COUNT(*) FROM dim\_titulo; SELECT COUNT(*) FROM fato\_avaliacao;
+
 
 ````
 - Exemplo de consulta:
